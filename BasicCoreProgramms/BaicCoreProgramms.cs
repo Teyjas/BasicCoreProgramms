@@ -6,5 +6,6 @@ Console.Title = "Basic Core Programs";
 Console.WriteLine("-------------Basic Core Programs-------------");
 //BasicPrograms.FlipCoin();
 //BasicPrograms.LeapYear();
-BasicPrograms.Power2();
+//BasicPrograms.Power2();
+BasicPrograms.HarmonicNo();
 Console.ReadKey();

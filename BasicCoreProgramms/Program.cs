@@ -74,6 +74,22 @@ internal class BasicPrograms
         else
             Console.WriteLine("Please Enter value of n from 0 to 30");
     }
+    /// <summary>
+    /// Calculates the Harmonic no of n
+    /// </summary>
+    public static void HarmonicNo()
+    {
+        int n = 0;
+        float harmonic = 0;
+        do
+        {
+            Console.Write("Enter a positive integer: ");
+            n = Convert.ToInt32(Console.ReadLine());
+        } while (n < 0);
+        for (int i = 1; i <= n; i++)
+            harmonic += (float)1 / (float)i;
+        Console.WriteLine("Harmonic no of " + n + ": " + harmonic);
+    }
 
 }
 
