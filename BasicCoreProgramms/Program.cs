@@ -143,6 +143,22 @@ internal class BasicPrograms
         remainder = dividend % divisor;
         Console.WriteLine("Quotient: " + quotient + " Remainder: " + remainder);
     }
+    // Swap 2 numbers
+    public static void Swap()
+    {
+        int a = 0;
+        int b = 0;
+        int temp = 0;
+        Console.WriteLine("Enter value for 'a': ");
+        a = GetPositiveInt();
+        Console.WriteLine("Enter value for 'b': ");
+        b = GetPositiveInt();
+        temp = a;
+        a = b;
+        b = temp;
+        Console.WriteLine("After Swapping....");
+        Console.WriteLine("a: " + a + " b: " + b);
+    }
 
 }
 

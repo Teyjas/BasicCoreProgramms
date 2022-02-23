@@ -9,5 +9,6 @@ Console.WriteLine("-------------Basic Core Programs-------------");
 //BasicPrograms.Power2();
 //BasicPrograms.HarmonicNo();
 //BasicPrograms.Factors();
-BasicPrograms.QuotientRem();
+//BasicPrograms.QuotientRem();
+BasicPrograms.Swap();
 Console.ReadKey();
