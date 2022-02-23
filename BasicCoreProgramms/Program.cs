@@ -39,6 +39,22 @@ internal class BasicPrograms
         Console.WriteLine("Head count: " + headCount + " Head Percent: " + headPercent);
         Console.WriteLine("Tail count: " + tailCount + " Tail Percent: " + tailPercent);
     }
+    /// <summary>
+    /// Checks for Leap year.
+    /// </summary>
+    public static void LeapYear()
+    {
+        int year = 0;
+        do
+        {
+            Console.Write("Enter a year(yyyy): ");
+            year = Convert.ToInt32(Console.ReadLine());
+        } while (year / 1000 == 0);
+        if (year % 4 == 0)
+            Console.WriteLine("It is a leap year");
+        else
+            Console.WriteLine("It is not a leap year");
+    }
 
 }
 
