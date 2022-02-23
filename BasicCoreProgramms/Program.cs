@@ -90,6 +90,59 @@ internal class BasicPrograms
             harmonic += (float)1 / (float)i;
         Console.WriteLine("Harmonic no of " + n + ": " + harmonic);
     }
+    // Computes Quotient & Remainder using Dividend & Divisor as I/P
+    public static void Factors()
+    {
+        int n = GetPositiveInt();
+        bool prime = true;
+        Console.WriteLine("The prime factors are: ");
+        for (int i = 2; i * i <= n; i++)
+        {
+            if (n % i == 0)
+            {
+                prime = true;
+                for (int j = 2; j <= i / 2; j++)
+                {
+                    if (i % j == 0)
+                    {
+                        prime = false;
+                        break;
+                    }
+                }
+                if (prime is true)
+                    Console.Write(i + " ");
+            }
+        }
+        Console.WriteLine();
+    }
+
+    // Repeats input statement until user enter positive int
+    private static int GetPositiveInt()
+    {
+        int n = 0;
+        do
+        {
+            Console.Write("Enter a positive integer: ");
+            n = Convert.ToInt32(Console.ReadLine());
+        } while (n < 0);
+        return n;
+    }
+
+    // Computes Quotient & Remainder using Dividend & Divisor as I/P
+    public static void QuotientRem()
+    {
+        int quotient = 0;
+        int remainder = 0;
+        int dividend = 0;
+        int divisor = 0;
+        Console.WriteLine("Enter Dividend: ");
+        dividend = GetPositiveInt();
+        Console.WriteLine("Enter Divisor: ");
+        divisor = GetPositiveInt();
+        quotient = dividend / divisor;
+        remainder = dividend % divisor;
+        Console.WriteLine("Quotient: " + quotient + " Remainder: " + remainder);
+    }
 
 }
 

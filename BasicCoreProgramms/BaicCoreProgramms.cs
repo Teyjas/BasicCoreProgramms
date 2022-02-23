@@ -7,5 +7,7 @@ Console.WriteLine("-------------Basic Core Programs-------------");
 //BasicPrograms.FlipCoin();
 //BasicPrograms.LeapYear();
 //BasicPrograms.Power2();
-BasicPrograms.HarmonicNo();
+//BasicPrograms.HarmonicNo();
+//BasicPrograms.Factors();
+BasicPrograms.QuotientRem();
 Console.ReadKey();
