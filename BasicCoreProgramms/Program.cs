@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace BasicCorePrograms;
 
-class BasicCorePrograms
+internal class BasicPrograms
 {
-
     
     static Random random = new Random();
 
-    static void Main(string[] args)
+    
+    public static void FlipCoin()
     {
         int count = 0;
         int headCount = 0;
@@ -39,6 +39,7 @@ class BasicCorePrograms
         Console.WriteLine("Head count: " + headCount + " Head Percent: " + headPercent);
         Console.WriteLine("Tail count: " + tailCount + " Tail Percent: " + tailPercent);
     }
+
 }
 
 
